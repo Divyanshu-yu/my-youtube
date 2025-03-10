@@ -1,4 +1,6 @@
 {
+  "homepage": "https://divyanshu-yu.github.io/my-youtube",
+
   "name": "my-youtube",
   "version": "0.1.0",
   "private": true,
@@ -21,6 +23,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -46,6 +50,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17"
   }
